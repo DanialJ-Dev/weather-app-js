@@ -34,10 +34,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: YekanBakhBold;
 }
 
 body {
+  font-family: YekanBakhBold;
   min-height: 100vh;
   max-width: 1200px;
   margin: auto;
@@ -69,6 +69,7 @@ body {
 }
 
 #search input {
+  font-family: YekanBakhBold, Helvetica;
   width: 300px;
   height: 35px;
   border: none;
@@ -80,6 +81,7 @@ body {
 }
 
 #search button {
+  font-family: YekanBakhBold;
   color: #000;
   border: none;
   background-color: var(--color-warning);
@@ -116,6 +118,7 @@ body {
 }
 
 #weather-content h1 {
+  font-family: YekanBakhBold, Helvetica;
   text-align: center;
   font-size: 2rem;
   color: var(--color-primary);
@@ -224,7 +227,6 @@ body {
 }
 
 .modal {
-  font-family: "iranyekanwebregular";
   z-index: 4;
   display: none;
   position: fixed;
@@ -236,6 +238,7 @@ body {
 }
 
 .modal-content {
+  font-family: iranyekanwebregular;
   justify-content: center;
   align-items: center;
   font-size: 1.1rem;

@@ -22,12 +22,13 @@ const showContactModal = () => {
   contactModal.style.display = "block";
 };
 
-const handleSideClick = (e) => {
-  if (e.target === modal || e.target === contactModal) {
+const handleOutsideClick = (e) => {
+  if (e.target === e.currentTarget) {
     removeModal();
   }
 };
 
-window.addEventListener("click", handleSideClick);
+modal.addEventListener("click", handleOutsideClick);
+contactModal.addEventListener("click", handleOutsideClick);
 
 export { showErrorModal, showContactModal, removeModal };
